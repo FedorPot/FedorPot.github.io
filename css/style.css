@@ -1,0 +1,642 @@
+body {
+    margin: 0;
+    background-color: #000;
+    font-family: 'Montserrat';
+}
+.main-header {
+    height: 500px;
+    background-image: url("../img/slide1.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    color: #F0E9CC;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation-name: background-change;
+    animation-timing-function: linear;
+    animation-duration: 12s;
+    animation-iteration-count: infinite;
+    width: 100%;
+    align-items: center;
+}
+.main-header h1 {
+    background-color: rgba(0,0,0,0.5);
+    padding: 6px 8px;
+}
+@keyframes background-change {
+    15% {
+        background-image: url("../img/slide1.jpg");
+    }
+    25% {
+        background-image: url("../img/slide2.jpg");
+    }
+    40% {
+        background-image: url("../img/slide2.jpg");
+    }
+    50% {
+        background-image: url("../img/slide3.jpg");
+    }
+    65% {
+        background-image: url("../img/slide3.jpg");
+    }
+    75% {
+        background-image: url("../img/slide4.jpg");
+    }
+    90% {
+        background-image: url("../img/slide4.jpg");
+    }
+}
+.container {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 400px;
+}
+.container .elem {
+    width: 100%;
+    color: #fff;
+    font-size: 20px;
+    padding: 8px 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.container .elem h1 {
+    font-size: 30px;
+    text-align: center;
+    color: #CCF0D2;
+}
+.container .elem p {
+    font-size: 20px;
+    text-align: center;
+    font-weight: 400;
+    color: #F0E9CC;
+}
+.mapimg {
+    background-image: url("../img/kartaFlag.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+}
+.greybg {
+    background-color: #4d4d4d;
+}
+.mapimg:hover {
+    background-image: url("../img/map.png");
+}
+.globusimg {
+    background-image: url("../img/globus.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+}
+.berlinimg {
+    background-image: url("../img/berlin.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+}
+.lang {
+    background-image: url("../img/lang.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+}
+.euro {
+    background-image: url("../img/euro.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+}
+footer {
+    background-color: #d6d6d6;
+    padding: 10px 30px 10px 120px;
+    display: flex;
+}
+footer p {
+    margin-bottom: 7px;
+}
+footer p a {
+    color: black;
+}
+footer p a:hover {
+    color: #808080;
+}
+.footerinfo {
+    display: flex;
+    width: 100%;
+    justify-content: flex-end;
+}
+.footerinfo p {
+    margin: 1px;
+    font-size: 14px;
+    color: #7d7f7d
+}
+.flexcolumn {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+.source {
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+@media(max-width:768px) {
+    .container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-left: 10px;
+        padding-right: 10px;
+        height: 500px;
+        box-sizing: border-box;
+    }
+    .mapimg {
+        height: 100%;
+    }
+    .globusimg {
+        height: 100%;
+    }
+    .berlinimg {
+        height: 100%;
+    }
+    .lang {
+        height: 100%;
+    }
+    .euro {
+        height: 100%;
+    }
+    .cafedral {
+        height: 100%;
+    }
+    .kelnsobor {
+        height: 100%;
+    }
+    .novsh {
+        height: 100%;
+    }
+    .getehome {
+        height: 100%;
+    }
+    .waterbridge {
+        height: 100%;
+    }
+    .doors {
+        height: 100%;
+    }
+    .gallery {
+        height: 100%;
+    }
+    .reverse {
+        flex-direction: column-reverse;
+    }
+    body footer {
+        padding: 10px 30px 10px 60px;
+        margin-top: 20px;
+    }
+    .bigdata {
+        height: 700px;
+    }
+}
+@media (max-width: 485px) {
+    body footer {
+        padding: 10px 5px 10px 20px
+    }
+}
+@media (max-width: 425px) {
+    body {
+        min-width: 426px;
+    }
+}
+nav {
+    position: fixed;
+    left: 0;
+    top: 0;
+    display: flex;
+    justify-content: space-around;
+    width:100%;
+    background-color: rgba(0,0,0,0.5);
+}
+nav a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: beige;
+    padding: 5px 9px;
+    border-radius: 8px;
+    margin-top: 8px;
+    margin-bottom: 8px;
+    text-decoration: none;
+    color: black;
+}
+nav a:active {
+    animation-name: minimize;
+    animation-duration: 0.2s;
+    animation-fill-mode: forwards;
+}
+.bold {
+    font-weight: 700;
+}
+@keyframes minimize {
+    100% {
+        transform: scale(0.9);
+        font-weight: 700;
+    }
+}
+nav a p {
+    padding: 0;
+    margin: 0;
+    text-align: center;
+}
+nav a:hover {
+    box-shadow: 1px 4px 6px 0 black;
+    background-color: #DBD4B8;
+}
+@media(max-width: 700px) {
+    nav {
+        display: none;
+    }
+    .cont {
+        flex-direction: column;
+    }
+    .reverseC {
+        flex-direction: column-reverse;
+    }
+}
+.history-header {
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url("../img/his.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.history-header h1 {
+    color: #CCF0D2;
+    background-color: rgba(0,0,0,0.5);
+    padding: 6px 8px;
+}
+.period {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #F0E9CC;
+    padding-right: 20px;
+    padding-left: 20px;
+}
+.period p {
+    text-align: center;
+    font-size: 20px;
+}
+.parallax {
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    height: 150px;
+}
+.koeln {
+    background-image: url("../img/Koeln.jpg");
+}
+.cont {
+    margin-top: 10px;
+    padding-left: 10px;
+    display: flex;
+    box-sizing: border-box;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    color: #F0E9CC;
+    
+}
+.elemP {
+    width: 70%;
+    box-sizing: border-box;
+    text-align: center;
+    padding-left: 7px;
+    padding-right: 7px;
+}
+.historymap {
+    height: 200px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-end;
+}
+.oldplems {
+    background-image: url("../img/historymap.png");
+    width: 30%;
+    min-width: 300px;
+}
+.frankempire {
+    background-image: url("../img/frankempire.gif");
+    width: 20%;
+    min-width: 300px;
+}
+.romempiere {
+    background-image: url("../img/romempire.png");
+    min-width: 300px;
+}
+.hrr {
+    background-image: url("../img/HRR.gif");
+    width: 20%;
+    min-width: 300px;
+}
+.napoleon {
+    background-image: url("../img/Napoleon.jpg");
+    width: 15%;
+    min-width: 200px;
+}
+.sgunion {
+    background-image: url("../img/sgunoin.png");
+    width: 20%;
+    background-color: grey;
+    background-size: contain;
+    border-radius: 4px;
+    min-width: 300px;
+    border: 2px dotted #F0E9CC;
+}
+.prusia {
+    background-image: url("../img/prusia.png");
+    width: 15%;
+    background-size: contain;
+    background-color: grey;
+    border-radius: 4px;
+    margin-left: 7px;
+    min-width: 300px;
+    border: 2px dotted #F0E9CC;
+}
+.austria {
+    background-image: url("../img/austria.png");
+    width:15%;
+    background-size: contain;
+    background-color: grey;
+    border-radius: 4px;
+    margin-right: 7px;
+    min-width: 300px;
+    border: 2px dotted #F0E9CC;
+}
+.historymap p {
+    display: none;
+    font-weight: 700;
+    font-size: 20px;
+    margin: 0;
+    color: #CCF0D2;
+    background-color: rgba(0,0,0,0.5);
+    padding: 6px 8px;
+    transition: 1s;
+}
+.historymap:hover p{
+    transition: 1s;
+    display: inline-block;
+}
+a {
+    text-decoration: none;
+}
+.WWI {
+    background-image: url("../img/WWI.jpg");
+}
+.regions-header {
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url("../img/regions.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.regions-header h1 {
+    color: #F0E9CC;
+    background-color: rgba(0,0,0,0.5);
+    padding: 6px 8px;
+    text-align: center;
+}
+.regs-cont {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+}
+.regsElem {
+    margin-top: 10px;
+    height: 200px;
+    width: 24%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+}
+.regsElem h1 {
+    color: #F0E9CC;
+    font-size: 26px;
+    background-color: rgba(0,0,0,0.5);
+    padding: 6px 8px;
+    display: none;
+    text-align: center;
+}
+.regsElem:hover h1{
+    display: inline-block;
+    animation-name: fromUtoD;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+}
+.baden {
+    background-image: url("../img/stuttgart.jpg");
+}
+.bavaria {
+    background-image: url("../img/bavaria.jpg")
+}
+.berlin {
+    background-image: url("../img/berlin.jpg")
+}
+.braden {
+    background-image: url("../img/braden.jpg")
+}
+.bremen {
+    background-image: url("../img/bremen.jpg")
+}
+.humburg {
+    background-image: url("../img/humburg.jpg")
+}
+.gessen {
+    background-image: url("../img/gessen.jpg")
+}
+.meklen {
+    background-image: url("../img/meklen.jpg")
+}
+.meklen h1 {
+    font-size: 14px;
+}
+.nsaksonia {
+    background-image: url("../img/nsaksonia.jpg")
+}
+.srein {
+    background-image: url("../img/srein.jpg")
+}
+.srein h1 {
+    font-size: 18px;
+}
+.reinland {
+    background-image: url("../img/reinland.jpg")
+}
+.saar {
+    background-image: url("../img/saar.jpg")
+}
+.saksonia {
+    background-image: url("../img/saksonia.jpg")
+}
+.saksonia-a {
+    background-image: url("../img/saksonia-anchalt.jpg")
+}
+.golstein {
+    background-image: url("../img/golstein.jpg")
+}
+.golstein h1 {
+    font-size: 23px;
+}
+.touringia {
+    background-image: url("../img/touringia.jpg")
+}
+@keyframes fromUtoD {
+    0% {
+        transform: translateY(-30px);
+    }
+    100% {
+        transform: translateY(0px);
+    }
+}
+@media (max-width: 768px) {
+    .regsElem {
+        width: 48%;
+    }
+}
+.atr-header {
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url("../img/mainatr.jpg");
+    background-repeat: no-repeat;
+    background-position:top;
+    background-size: cover;
+}
+.atr-header h1 {
+    color: #F0E9CC;
+    background-color: rgba(0,0,0,0.5);
+    padding: 6px 8px;
+    text-align: center;
+}
+.atr-card {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+}
+.alt-card img {
+    box-sizing: border-box;
+    width: 50%;
+}
+.cafedral {
+    background-image: url("../img/cafedral.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.kelnsobor {
+    background-image: url("../img/soborkeln.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.novsh {
+    background-image: url("../img/novansht.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.getehome {
+    background-image: url("../img/getehome.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.waterbridge {
+    background-image: url("../img/bridge.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.doors {
+    background-image: url("../img/doors.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.gallery {
+    background-image: url("../img/gallery.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.facts-header {
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url("../img/factsbg.jpg");
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: cover;
+}
+.facts-header h1 {
+    color: #CCF0D2;
+    background-color: rgba(0,0,0,0.5);
+    padding: 6px 8px;
+    text-align: center;
+}
+.contF {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.elemF {
+    margin-top: 10px;
+    width: 33%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    text-align: center;
+}
+.elemF p {
+    color: #F0E9CC;
+    font-size: 20px;
+    padding: 0 5px;
+}
+.elemF img {
+    width: 100%;
+    box-sizing: border-box;
+}
+@media (max-width: 637px) {
+    .atr-header h1 {
+        font-size: 27px;
+    }
+    .elemF {
+        width: 49%;
+    }
+}
